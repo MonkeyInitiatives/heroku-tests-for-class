@@ -1,0 +1,1 @@
+# heroku-tests-for-class
