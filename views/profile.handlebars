@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-auto">
+    <h2>Welcome, {{username}}!</h2>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-md-3">
+    <h3 class="mb-5">Create a New Meal:</h3>
+    <form class="form new-meal-form">
+      <div class="form-group border-bottom">
+        <label for="meal-name"></label>
+        <input class="form-input border-0" placeholder="Meal Name" type="text" id="meal-name" name="meal-name" />
+      </div>
+      <div class="form-group border-bottom">
+        <label for="meal-day"></label>
+        <input class="form-input border-0" placeholder="Day of the Week" type="text" id="meal-day" name="meal-day" />
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create</button>
+      </div>
+      <div class="form-group">
+        <label for="type-of-meal">breakfast, lunch, or dinner?: </label>
+        <input class="form-input" type="text" id="meal-type" name="meal-type" />
+      </div>
+      
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="col-md-6 meal-list">
+    <h3>Current Meals:</h3>
+
+  </div>
+  
+</div>
+
+<body onload="getMeals()"></body>
+<script src="./js/profile.js"></script>

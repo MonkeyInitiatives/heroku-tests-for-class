@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS resaleStore_db;
-CREATE DATABASE resaleStore_db;
+DROP DATABASE IF EXISTS shoppingcart_db;
+CREATE DATABASE shoppingcart_db;

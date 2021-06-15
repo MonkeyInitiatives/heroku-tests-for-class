@@ -1,21 +1,13 @@
-const User = require('./User');
-const Item = require('./Item');
+const Users = require('./users');
+const Meals = require('./meals');
 
-User.hasMany(Item, {
-  foreignKey: 'user_id',
-  onDelete: 'CASCADE'
+Users.hasMany(Meals, {
+    foreignKey: 'user_id'
 });
 
-Item.belongsTo(User, {
-  foreignKey: 'user_id'
+Meals.belongsTo(Users, {
+    foreignKey: 'user_id'
 });
 
-// Comment.belongsTo(User, {
-//   foreignKey: 'user_id',
-// });
 
-// Comment.belongsTo(Item, {
-//   foreignKey: 'item_id'
-// });
-
-module.exports = { User, Item };
+module.exports = { Users, Meals };

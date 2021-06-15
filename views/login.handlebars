@@ -1,20 +1,44 @@
-  <div id="login-box" class="col-md-6" style="margin: 0 auto;">
-    <h2>Login</h2>
+<div class="col-4 offset-4" id="login-display">
+  <h2 class="mb-5"> Login </h2>
+  <form class="form login-form">
+    <div class="mb-5 border-bottom">
+      <i class="fas fa-envelope"></i>
+      <input style="outline:none" class="ml-2 mb-2 border-0" placeholder="Email" type="text" id="email-login" />
+    </div>
+    <div class="mb-5 border-bottom">
+      <i class="fas fa-lock"></i>
+      <input style="outline:none" class="ml-2 mb-2 border-0" placeholder="Password" type="password" id="password-login" />
+    </div>
+    <div class="form-group">
+      <button class="btn btn-primary" type="submit">login</button>
+    </div>
+    <div id="toggle-signup">
+      <a href="#">Create an account</a>
+    </div>
+  </form>
+</div>
 
-    <form class="form login-form">
-      <div class="form-group">
-        <label for="email-login">email:</label>
-        <input class="form-input" type="text" id="email-login" />
-      </div>
-      <div class="form-group">
-        <label for="password-login">password:</label>
-        <input class="form-input" type="password" id="password-login" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button>
-      </div>
-    </form>
-  </div>
-
+<div class="col-4 offset-4" id="signup-display" style="display: none;">
+  <form class="signup-form">
+    <h2 class="mb-5">Signup</h2>
+    <div class="mb-5 border-bottom">
+      <i class="fas fa-user"></i>
+      <input style="outline:none" class="ml-2 mb-2 border-0" placeholder="Your Name" type="text" id="username-signup" />
+    </div>
+    <div class="mb-5 border-bottom">
+      <i class="fas fa-envelope"></i>
+      <input style="outline:none" class="ml-2 mb-2 border-0" placeholder="Email" type="text" id="email-signup" />
+    </div>
+    <div class="mb-4 border-bottom ">
+      <i class="fas fa-lock"></i>
+      <input style="outline:none" class="ml-2 mb-2 border-0" placeholder="Password" type="password" id="password-signup" />
+    </div>
+    <button class="btn btn-primary mb-3" type="submit">signup</button>
+    <div id="toggle-signin">
+      <a href="#">already a member?</a>
+    </div>
+  </form>
+</div>
 
 <script src="./js/login.js"></script>
+<script src="https://kit.fontawesome.com/6943897cd3.js" crossorigin="anonymous"></script>
